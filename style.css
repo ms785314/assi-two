@@ -1,5 +1,82 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* common css */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 40px;
+
+}
+
+.container {
+    width: 820px;
+    margin: 0 400px;
+}
+
+.primary {
+    background: #E02C6D;
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+/* keyframes */
+
+
+
+
+@keyframes move {
+    50% {
+        transform: translateX(20px);
+    }
+}
+
+/* intro-section nav section  */
+
+.nav-section {
+    padding: 40px 0;
+
+}
+
+
+
+
+/* styles for intro section */
+
+.intro-section {
+    display: flex;
+    height: 80vh;
+
+    align-items: center;
+}
+
+.intro-description h1 {
+    margin-bottom: 18px;
+}
+
+.intro-description p {
+    margin-bottom: 18px;
+}
+
+.intro-img img {
+    width: 100%;
+}
+
+.fa-arrow-right {
+    animation-name: move;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
 }
